@@ -6,9 +6,9 @@ function getBookingForm(){
 
 	$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 	$headers .= "From: От кого письмо <from@example.com>\r\n";
-	$headers .= "Reply-To: kopelev.i@yandex.ru\r\n";
+	$headers .= "Reply-To: filonenko0406@gmail.com\r\n";
 
-	$to      = 'kopelev.i@yandex.ru';
+	$to      = 'filonenko0406@gmail.com';
 	$subject = 'Новая бронь с сайта';
 	$message = '';
 	$message .= 'Апартаменты '. $data['room_name'].$newLine;
