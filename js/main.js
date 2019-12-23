@@ -456,9 +456,8 @@ $(function () {
           type: $form.attr('method') || 'POST',
           context: this,
           success: function (response) {
-            // Сообщение об успешной отправке
             console.log('Успешная отправка');
-            //window.location.href = './thanks.php';
+            window.location.href = '/spasibo/';
           },
           error: function () {
             // Ошибка отправки

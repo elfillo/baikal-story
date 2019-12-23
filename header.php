@@ -71,7 +71,7 @@
                         <div class="language__current">
                             <img src="<?php echo get_template_directory_uri() ?>/img/flags/<?php echo pll_current_language()?>.svg" alt="<?php echo pll_current_language()?>">
                             <span>
-                                Ru
+                                <?php echo strtoupper(pll_current_language())?>
                             </span>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                 <a href="<?php echo $lang['url']?>">
                                     <img src="<?php echo get_template_directory_uri()?>/img/flags/<?php echo $key?>.svg" alt="China">
                                     <span>
-                                        <?php echo $key?>
+                                        <?php echo strtoupper($key)?>
                                     </span>
                                 </a>
                             </li>
