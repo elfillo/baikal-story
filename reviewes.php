@@ -83,7 +83,7 @@ Template Name: Отзывы
 		                    $reviews_ru = query_posts(array(
 			                    'post_type' => 'post_review',
 			                    'lang' => 'ru',
-			                    'post_limits' => 3
+			                    'post_limits' => 100
 		                    ));
 		                    ?>
 		                    <?php foreach ($reviews_ru as $review):?>
@@ -112,7 +112,7 @@ Template Name: Отзывы
 		                    $reviews_ru = query_posts(array(
 			                    'post_type' => 'post_review',
 			                    'lang' => 'zh',
-			                    'post_limits' => 3
+			                    'post_limits' => 100
 		                    ));
 		                    ?>
 		                    <?php foreach ($reviews_ru as $review):?>
@@ -141,7 +141,7 @@ Template Name: Отзывы
 		                    $reviews_ru = query_posts(array(
 			                    'post_type' => 'post_review',
 			                    'lang' => 'en',
-			                    'post_limits' => 3
+			                    'post_limits' => 100
 		                    ));
 		                    ?>
 		                    <?php foreach ($reviews_ru as $review):?>

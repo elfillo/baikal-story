@@ -1,5 +1,5 @@
 <?php
-$apartments = get_posts(array('post_type' => 'post_rooms'));
+$apartments = get_posts(array('post_type' => 'post_rooms', 'numberposts'      => 999));
 ?>
 <div class="appartament-popup" style="display: none;">
     <div class="appartament-popup__header">
