@@ -149,7 +149,7 @@ Template Name: Главная
             </div>
         </div>
     </section>
-    <?php  $apartments = get_posts(array('post_type' => 'post_rooms'));?>
+    <?php  $apartments = get_posts(array('post_type' => 'post_rooms', 'numberposts'      => 999));?>
     <section class="prew-appartaments prew-appartaments_height_full prew-appartaments_mobile_hide">
         <div class="swiper-container prew-appartaments-slider">
             <div class="swiper-wrapper">
