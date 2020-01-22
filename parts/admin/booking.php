@@ -11,7 +11,7 @@ function getBookingForm(){
 	$to      = 'filonenko0406@gmail.com';
 	$subject = 'Новая бронь с сайта';
 	$message = '';
-	$message .= 'Апартаменты: '. $data['room_name'].$newLine;
+	$message .= 'Апартаменты: '. '<<'.$data['room_name'].'>>'.$newLine;
 
 	if(isset($data['countGouwup'])){
 		$message .= 'Колличество взрослых: '. $data['countGouwup'].$newLine;
