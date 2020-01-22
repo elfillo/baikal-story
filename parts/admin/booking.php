@@ -2,7 +2,7 @@
 function getBookingForm(){
 	parse_str($_POST['data'], $data);
 
-	$newLine = "\r\n";
+	$newLine = "<br/>";
 
 	$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 	$headers .= "From: От кого письмо <from@example.com>\r\n";
@@ -11,7 +11,7 @@ function getBookingForm(){
 	$to      = 'filonenko0406@gmail.com';
 	$subject = 'Новая бронь с сайта';
 	$message = '';
-	$message .= 'Апартаменты '. $data['room_name'].$newLine;
+	$message .= 'Апартаменты: '. $data['room_name'].$newLine;
 
 	if(isset($data['countGouwup'])){
 		$message .= 'Колличество взрослых: '. $data['countGouwup'].$newLine;
