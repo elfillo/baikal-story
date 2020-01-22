@@ -102,22 +102,24 @@ Template Post Type: post_rooms
                         </h2>
                         <div class="row places__row">
                             <?php $bedsIds = get_post_meta($post->ID, 'bed_id', true); ?>
-                            <?php foreach ($bedsIds as $id):?>
-                            <div class="place">
-                                <img
-                                        class="place__icon place__icon_apartament1"
-                                        src="<?php echo get_the_post_thumbnail_url($id)?>"
-                                        alt="<?php echo get_post($id)->post_title?>"
-                                        width="33" height="30"
-                                />
-                                <div class="place__label">
-                                    <?php echo get_post($id)->post_title?>
+                            <?php if(!empty($bedsIds)):?>
+                                <?php foreach ($bedsIds as $id):?>
+                                <div class="place">
+                                    <img
+                                            class="place__icon place__icon_apartament1"
+                                            src="<?php echo get_the_post_thumbnail_url($id)?>"
+                                            alt="<?php echo get_post($id)->post_title?>"
+                                            width="33" height="30"
+                                    />
+                                    <div class="place__label">
+                                        <?php echo get_post($id)->post_title?>
+                                    </div>
+                                    <div class="place__desc">
+                                        <?php echo get_post($id)->post_content?>
+                                    </div>
                                 </div>
-                                <div class="place__desc">
-	                                <?php echo get_post($id)->post_content?>
-                                </div>
-                            </div>
-                            <?php endforeach; unset($id);?>
+                                <?php endforeach; unset($id);?>
+                            <?php endif;?>
                         </div>
                     </div>
 
@@ -279,7 +281,7 @@ Template Post Type: post_rooms
                     <h3 class="display display_size_small order-modal__step-titel">
                         <?php pll_e('Забронировать проживание')?>
                     </h3>
-                    <input type="hidden" name="room_name" value="<?php echo $post->post_title?>">
+                    <input id='room_name' type="hidden" name="room_name" value="<?php echo htmlspecialchars($post->post_title)?>" />
                     <div class="guests-count">
                         <h3 class="display order-modal__subtitle guests-count__title">
                             <?php pll_e('Колиичество гостей')?>

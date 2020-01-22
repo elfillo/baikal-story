@@ -446,7 +446,6 @@ $(function () {
         if ($form.find('._error').length > 0) {
           return false;
         }
-        console.log($form.serialize(), '$form.serialize()');
         $.ajax({
           url: '/wp-admin/admin-ajax.php',
           data: {
