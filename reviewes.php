@@ -36,7 +36,7 @@ Template Name: Отзывы
                         </div>
                         <div class="partner-tile__right">
                             <div class="partner-tile__value">
-                                4,6 из 5
+                                5 из 5
                             </div>
                             <div class="partner-tile__desc">
 	                            <?php pll_e('средняя оценка')?>
@@ -50,7 +50,7 @@ Template Name: Отзывы
                         </div>
                         <div class="partner-tile__right">
                             <div class="partner-tile__value">
-                                8,6 из 10
+                                9,3 из 10
                             </div>
                             <div class="partner-tile__desc">
 	                            <?php pll_e('средняя оценка')?>
@@ -67,7 +67,7 @@ Template Name: Отзывы
                         </div>
                         <div class="reviews-switcher__tabs">
                             <button class="reviews-switcher__tab is-active" data-language="ru">
-                                Русские
+                                Русский
                             </button>
                             <button class="reviews-switcher__tab" data-language="ch">
                                 Chinese

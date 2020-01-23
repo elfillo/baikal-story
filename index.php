@@ -253,7 +253,7 @@ Template Name: Главная
                             </div>
                             <div class="partner-tile__right">
                                 <div class="partner-tile__value">
-                                    4,6 из 5
+                                    5 из 5
                                 </div>
                                 <div class="partner-tile__desc">
                                     <?php pll_e('средняя оценка')?>
@@ -267,7 +267,7 @@ Template Name: Главная
                             </div>
                             <div class="partner-tile__right">
                                 <div class="partner-tile__value">
-                                    8,6 из 10
+                                    9,3 из 10
                                 </div>
                                 <div class="partner-tile__desc">
 	                                <?php pll_e('средняя оценка')?>
@@ -284,7 +284,7 @@ Template Name: Главная
                             </div>
                             <div class="reviews-switcher__tabs">
                                 <button class="reviews-switcher__tab is-active" data-language="ru">
-                                    Русские
+                                    Русский
                                 </button>
                                 <button class="reviews-switcher__tab" data-language="ch">
                                     Chinese
@@ -401,7 +401,7 @@ Template Name: Главная
 	            <?php foreach (get_field('inst_gallery', get_page_data('index')->ID) as $img):?>
 	            <?php $imgUrl = wp_get_attachment_image_src($img, 'full')[0];?>
                 <div class="instagram__item js-scroll-fade-in ">
-                    <a href="#" class="instagram__link">
+                    <a href="https://instagram.com/baikalapart?igshid=4qnkwpc8w1b6" class="instagram__link">
                         <img src="<?php echo $imgUrl?>" alt="inst">
                     </a>
                 </div>

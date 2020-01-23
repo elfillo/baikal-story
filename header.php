@@ -117,6 +117,11 @@
         <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
+                    <a href="/" class="mobile-menu__link">
+	                    <?php pll_e('Главная')?>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
                     <button class="mobile-menu__btn">
 	                    <?php pll_e('Апартаменты')?>
                     </button>
