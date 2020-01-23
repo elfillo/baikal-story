@@ -71,9 +71,7 @@ Template Name: Главная
                             </div>
                         </div>
                         <div class="benefits__col js-scroll-fade-in ">
-                            <svg class="benefits__icon" width="50" height="50" viewBox="0 0 50 50">
-                                <use xlink:href="<?php echo get_template_directory_uri() ?>/img/symbol_sprite.svg#icon-24-hours"></use>
-                            </svg>
+                            <img src="<?php echo get_template_directory_uri() ?>/img/cooking-tools.svg" alt="" class="benefits__icon" width="50" height="50">
                             <h3 class="benefits__label">
 	                            <?php pll_e('Укомплектованная кухня')?>
                             </h3>
