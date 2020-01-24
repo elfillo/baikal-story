@@ -92,7 +92,7 @@ Template Post Type: post_rooms
                     </div>
                     <?php endif;?>
                     <div class="body-inner-page__img" style="background-color: #FCF7F1;">
-                        <img src="" alt="">
+                        <img src="<?php the_field('room_single_img', $post->id)?>" alt="#">
                     </div>
 
 

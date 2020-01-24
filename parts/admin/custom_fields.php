@@ -45,7 +45,7 @@ add_action('save_post', 'rooms_save');
 
 //select beds for rooms
 function beds_metabox_callback($post){
-	$beds = get_posts(array('post_type' => 'post_bed'));
+	$beds = get_posts(array('post_type' => 'post_bed', 'numberposts' => 100));
 	$bedsIds = get_post_meta($post->ID, 'bed_id', true);
 	if(!is_array($bedsIds)) $bedsIds = array($bedsIds);
 
