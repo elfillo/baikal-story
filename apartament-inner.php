@@ -95,7 +95,6 @@ Template Post Type: post_rooms
                         <img src="<?php the_field('room_single_img', $post->id)?>" alt="#">
                     </div>
 
-
                     <div class="places">
                         <h2 class="display display_size_small body-inner-page__title">
                             <?php pll_e('Спальные места')?>
@@ -269,7 +268,7 @@ Template Post Type: post_rooms
                         </span>
                     </div>
                 </div>
-                <div class="order-modal__img" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/admin/slide-main.jpg);"></div>
+                <div class="order-modal__img" style="background-image: url(<?php echo get_the_post_thumbnail_url($post) ?>);"></div>
             </div>
         </div>
         <div class="order-modal__right">
