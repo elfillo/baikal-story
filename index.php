@@ -58,7 +58,7 @@ Template Name: Главная
                             </div>
                         </div>
                         <div class="benefits__col js-scroll-fade-in ">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/Security.svg" alt="#" width="50" height="50">
+                            <img src="<?php echo get_template_directory_uri() ?>/img/Security.svg" alt="#" width="50" height="50" class="benefits__icon">
                             <h3 class="benefits__label">
 	                            <?php pll_e('Трансфер от/до отеля')?>
                             </h3>
